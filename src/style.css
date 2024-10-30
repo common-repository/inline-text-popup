@@ -1,0 +1,81 @@
+.wps-inline-modal {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.wps-inline-modal .wps-inline-modal-content {
+ 
+    margin: 15% auto; 
+    width: 50%;	
+	position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+   -webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+.wps-inline-modal .wps-inline-modal-header{
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.wps-inline-modal .wps-inline-modal-body
+{
+	padding: 15px;
+	font-size:12px;
+}
+
+.wps-inline-modal .wps-inline-modal-header .wps-inline-modal-title
+{
+	margin:1px 0px;
+	font-size:16px;
+    padding-right: 20px;
+}
+
+/* The Close Button */
+.wps-inline-modal .wps-inline-modal-close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+	position:absolute;
+	right: 10px;
+    top: 0px;
+    bottom: 0px;
+	cursor:pointer;
+}
+
+.wps-inline-modal .wps-inline-modal-close:hover,
+.wps-inline-modal .wps-inline-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.inlinePopupForm
+{
+	width:100%;
+}
+
+@media only screen and (max-width: 500px) {
+	
+	.wps-inline-modal .wps-inline-modal-content
+	{
+		width:90%;
+	}
+
+}
